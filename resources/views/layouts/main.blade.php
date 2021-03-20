@@ -12,7 +12,7 @@
 <nav class="border-b border-gray-800">
     <div class="container mx-auto px-4 flex-col md:flex-row flex items-center justify-between px-4 py-6">
         <ul class="flex flex-col md:flex-row items-center">
-            <li><a href="#">
+            <li><a href="/">
                     <svg
                         width="35.000000pt" height="35.000000pt" viewBox="0 0 1280.000000 977.000000"
                         preserveAspectRatio="xMidYMid meet">

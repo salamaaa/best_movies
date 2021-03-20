@@ -5,25 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5aa7ebc5-b78f-4342-8c47-317785149828" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/icons/star.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/avatar.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/movies/images/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/movies/images/2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/movies/images/3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/movies/images/4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/movies/images/5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/movies/images/6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/movies/images/7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/movies/images/8.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/layouts/main.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/show.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/resources/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/show.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.mix.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -193,6 +178,8 @@
       <updated>1616078648412</updated>
       <workItem from="1616078652684" duration="13248000" />
       <workItem from="1616156223869" duration="4058000" />
+      <workItem from="1616166173252" duration="3214000" />
+      <workItem from="1616246727441" duration="10204000" />
     </task>
     <servers />
   </component>
