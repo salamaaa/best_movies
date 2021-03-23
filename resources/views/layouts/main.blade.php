@@ -6,7 +6,9 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="{{asset('css/app.css')}}">
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
     <title>Best Movies</title>
+    @livewireStyles
 </head>
 <body class="font-sans bg-gray-900 text-white">
 <nav class="border-b border-gray-800">
@@ -50,18 +52,7 @@
             </li>
         </ul>
         <div class="flex flex-col md:flex-row items-center">
-            <div class="relative">
-                <input type="text"
-                       class="mt-3 md:mt-0 bg-gray-800 text-sm rounded-full w-64 px-4 py-1 pl-8 focus:outline-none focus:shadow-outline"
-                       placeholder="Search">
-                <div class="absolute top-0">
-                    <svg viewBox="0 0 24 24"
-                         class="fill-current w-4 text-gray-500 mt-2 ml-2">
-                        <path class="heroicon-ui"
-                              d="M16.32 14.9l5.39 5.4a1 1 0 01-1.42 1.4l-5.38-5.38a8 8 0 111.41-1.41zM10 16a6 6 0 100-12 6 6 0 000 12z"/>
-                    </svg>
-                </div>
-            </div>
+            <livewire:search-dropdown/>
             <div class="md:ml-4 mt-3 md:mt-0">
                 <a href="">
                     <img src="{{asset('images/avatar.png')}}"
@@ -73,5 +64,7 @@
     </div>
 </nav>
 @yield('content')
+@livewireScripts
+
 </body>
 </html>

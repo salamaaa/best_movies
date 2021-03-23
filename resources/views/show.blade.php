@@ -5,10 +5,6 @@
         .orange {
             background-color: #ed8936;
         }
-
-        .orange-500 {
-            background-color: #dd6b20;
-        }
     </style>
     <div class="movie-info border-b border-gray-800">
         <div class="container mx-auto px-4 py-16 flex flex-col md:flex-row">
@@ -47,15 +43,45 @@
                         </div>
                     </div>
                 </div>
-                @if(count($movie['videos']['results']) > 0)
-                    <div class="mt-12">
-                        <a href="https://www.youtube.com/watch?v={{$movie['videos']['results'][0]['key']}}"
-                           class="flex inline-flex items-center orange text-gray-900 rounded font-semibold px-5 py-4">
-                            <img src="{{asset('icons/play.png')}}" class="w-6" alt="play">
-                            <span class="ml-2"> Play Trailer</span>
-                        </a>
+                <div x-data="{isOpen:false}">
+                    @if(count($movie['videos']['results']) > 0)
+                        <div class="mt-12">
+                            <button @click="isOpen=true"
+                                    class="flex inline-flex items-center orange text-gray-900 rounded font-semibold px-5 py-4">
+                                <img src="{{asset('icons/play.png')}}" class="w-6" alt="play">
+                                <span class="ml-2"> Play Trailer</span>
+                            </button>
+                        </div>
+                    @endif
+
+                    <div style="background-color: rgb(0,0,0,.5);"
+                         x-show.transition.opacity="isOpen"
+                         class="fixed top-0 left-0 w-full h-full flex items-center shadow-lg overflow-y-auto">
+                        <div class="container mx-auto lg:px-32 rounded-lg overflow-y-auto">
+                            <div class="bg-gray-900 rounded">
+                                <div class="flex justify-end pr-4 pt-2">
+                                    <button class="text-3xl leading-none hover:text-gray-300"
+                                            @click="isOpen=false">
+                                        &times;
+                                    </button>
+                                </div>
+                                <div class="modal-body px-8 py-8">
+                                    <div class="responsive-container overflow-hidden relative"
+                                         style="padding-top: 56.25%">
+                                        <iframe
+                                            src="https://www.youtube.com/embed/{{$movie['videos']['results'][0]['key']}}"
+                                            class="responsive-iframe absolute top-0 left-0 w-full h-full"
+                                            width="560"
+                                            height="315"
+                                            style="border:0"
+                                            allow="encrypted-media"
+                                            allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                @endif
+                </div>
             </div>
         </div>
     </div>
